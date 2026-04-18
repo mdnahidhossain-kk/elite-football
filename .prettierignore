@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+dist/
+.web-build/
+build/
+dist/
+coverage/
+.metro-health-check*
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
