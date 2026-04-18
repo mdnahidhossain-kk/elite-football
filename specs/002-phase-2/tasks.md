@@ -99,17 +99,17 @@
 
 ### Tests for User Story 3
 
-- [ ] T029 [P] [US3] Add search screen snapshot test coverage in `tests/phase2/us3/searchScreen.snapshot.test.tsx`
-- [ ] T030 [P] [US3] Add integration test for debounced query updates and filter-scoped results in `tests/phase2/us3/searchQueryFilter.integration.test.tsx`
-- [ ] T031 [P] [US3] Add integration test for recent-search recall and no-results fallback in `tests/phase2/us3/searchRecents.integration.test.tsx`
+- [X] T029 [P] [US3] Add search screen snapshot test coverage in `tests/phase2/us3/searchScreen.snapshot.test.tsx`
+- [X] T030 [P] [US3] Add integration test for debounced query updates and filter-scoped results in `tests/phase2/us3/searchQueryFilter.integration.test.tsx`
+- [X] T031 [P] [US3] Add integration test for recent-search recall and no-results fallback in `tests/phase2/us3/searchRecents.integration.test.tsx`
 
 ### Implementation for User Story 3
 
-- [ ] T032 [P] [US3] Implement search filter chips/tabs UI in `src/features/search/components/SearchFilterBar.tsx`
-- [ ] T033 [P] [US3] Implement debounced search execution and projection logic in `src/features/search/services/searchEngine.ts`
-- [ ] T034 [P] [US3] Implement recent-search list and selection component in `src/features/search/components/RecentSearchesList.tsx`
-- [ ] T035 [US3] Implement global search screen orchestration and state transitions in `src/features/search/screens/SearchScreen.tsx`
-- [ ] T036 [US3] Implement search result routing helper for club/player/league/news destinations in `src/features/search/navigation/openSearchResult.ts`
+- [X] T032 [P] [US3] Implement search filter chips/tabs UI in `src/features/search/components/SearchFilterBar.tsx`
+- [X] T033 [P] [US3] Implement debounced search execution and projection logic in `src/features/search/services/searchEngine.ts`
+- [X] T034 [P] [US3] Implement recent-search list and selection component in `src/features/search/components/RecentSearchesList.tsx`
+- [X] T035 [US3] Implement global search screen orchestration and state transitions in `src/features/search/screens/SearchScreen.tsx`
+- [X] T036 [US3] Implement search result routing helper for club/player/league/news destinations in `src/features/search/navigation/openSearchResult.ts`
 
 **Checkpoint**: User Stories 1–3 are independently functional.
 

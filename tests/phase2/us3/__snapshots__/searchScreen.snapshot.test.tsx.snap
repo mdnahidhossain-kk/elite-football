@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SearchScreen snapshot matches active filter state with visible results 1`] = `
+{
+  "activeFilter": "clubs",
+  "query": "arsenal",
+  "recentsCount": 1,
+  "resultCount": 1,
+  "resultTypes": [
+    "club",
+  ],
+  "surfaceState": "results",
+}
+`;
