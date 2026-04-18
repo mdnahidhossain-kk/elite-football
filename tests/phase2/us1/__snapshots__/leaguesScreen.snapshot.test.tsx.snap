@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`LeaguesScreen snapshot matches grouped top-competitions structure 1`] = `
+[
+  {
+    "items": [
+      {
+        "category": "top",
+        "country": "Spain",
+        "id": "laliga",
+        "letterKey": "L",
+        "name": "La Liga",
+      },
+    ],
+    "letter": "L",
+  },
+  {
+    "items": [
+      {
+        "category": "top",
+        "country": "England",
+        "id": "epl",
+        "letterKey": "P",
+        "name": "Premier League",
+      },
+    ],
+    "letter": "P",
+  },
+  {
+    "items": [
+      {
+        "category": "top",
+        "country": "Italy",
+        "id": "seriea",
+        "letterKey": "S",
+        "name": "Serie A",
+      },
+    ],
+    "letter": "S",
+  },
+]
+`;

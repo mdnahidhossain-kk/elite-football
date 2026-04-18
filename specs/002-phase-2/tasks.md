@@ -50,18 +50,18 @@
 
 ### Tests for User Story 1
 
-- [ ] T012 [P] [US1] Add leagues screen snapshot test coverage in `tests/phase2/us1/leaguesScreen.snapshot.test.tsx`
-- [ ] T013 [P] [US1] Add integration test for category switching and list isolation in `tests/phase2/us1/leaguesCategorySwitch.integration.test.tsx`
-- [ ] T014 [P] [US1] Add integration test for alphabet quick-jump and fallback behavior in `tests/phase2/us1/leaguesQuickJump.integration.test.tsx`
+- [X] T012 [P] [US1] Add leagues screen snapshot test coverage in `tests/phase2/us1/leaguesScreen.snapshot.test.tsx`
+- [X] T013 [P] [US1] Add integration test for category switching and list isolation in `tests/phase2/us1/leaguesCategorySwitch.integration.test.tsx`
+- [X] T014 [P] [US1] Add integration test for alphabet quick-jump and fallback behavior in `tests/phase2/us1/leaguesQuickJump.integration.test.tsx`
 
 ### Implementation for User Story 1
 
-- [ ] T015 [P] [US1] Implement competition grouping and letter index lookup utilities in `src/features/leagues/utils/competitionIndex.ts`
-- [ ] T016 [P] [US1] Implement category tabs component for leagues in `src/features/leagues/components/CompetitionCategoryTabs.tsx`
-- [ ] T017 [P] [US1] Implement alphabetical quick-jump rail component in `src/features/leagues/components/AlphabetQuickJump.tsx`
-- [ ] T018 [US1] Implement competitions FlashList screen with category and quick-jump orchestration in `src/features/leagues/screens/LeaguesScreen.tsx`
-- [ ] T019 [US1] Implement competition card item and empty-category fallback state in `src/features/leagues/components/CompetitionListItem.tsx`
-- [ ] T020 [US1] Wire competition selection to detail navigation contract in `src/features/leagues/navigation/openCompetitionDetail.ts`
+- [X] T015 [P] [US1] Implement competition grouping and letter index lookup utilities in `src/features/leagues/utils/competitionIndex.ts`
+- [X] T016 [P] [US1] Implement category tabs component for leagues in `src/features/leagues/components/CompetitionCategoryTabs.tsx`
+- [X] T017 [P] [US1] Implement alphabetical quick-jump rail component in `src/features/leagues/components/AlphabetQuickJump.tsx`
+- [X] T018 [US1] Implement competitions FlashList screen with category and quick-jump orchestration in `src/features/leagues/screens/LeaguesScreen.tsx`
+- [X] T019 [US1] Implement competition card item and empty-category fallback state in `src/features/leagues/components/CompetitionListItem.tsx`
+- [X] T020 [US1] Wire competition selection to detail navigation contract in `src/features/leagues/navigation/openCompetitionDetail.ts`
 
 **Checkpoint**: User Story 1 is independently functional and testable.
 
