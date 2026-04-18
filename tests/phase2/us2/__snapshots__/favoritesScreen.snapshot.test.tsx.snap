@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FavoritesScreen snapshot matches teams segment with ordered items and segment counts 1`] = `
+{
+  "activeSegment": "teams",
+  "isEmpty": false,
+  "segmentCounts": {
+    "leagues": 0,
+    "players": 1,
+    "teams": 2,
+  },
+  "visibleFavoriteIds": [
+    "team-2",
+    "team-1",
+  ],
+  "visibleFavoriteNames": [
+    "Liverpool",
+    "Arsenal",
+  ],
+}
+`;

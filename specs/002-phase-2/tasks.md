@@ -75,17 +75,17 @@
 
 ### Tests for User Story 2
 
-- [ ] T021 [P] [US2] Add favorites screen snapshot test coverage in `tests/phase2/us2/favoritesScreen.snapshot.test.tsx`
-- [ ] T022 [P] [US2] Add integration test for segment tab isolation in `tests/phase2/us2/favoritesSegments.integration.test.tsx`
-- [ ] T023 [P] [US2] Add integration test for reorder persistence and remove behavior in `tests/phase2/us2/favoritesReorderRemove.integration.test.tsx`
+- [X] T021 [P] [US2] Add favorites screen snapshot test coverage in `tests/phase2/us2/favoritesScreen.snapshot.test.tsx`
+- [X] T022 [P] [US2] Add integration test for segment tab isolation in `tests/phase2/us2/favoritesSegments.integration.test.tsx`
+- [X] T023 [P] [US2] Add integration test for reorder persistence and remove behavior in `tests/phase2/us2/favoritesReorderRemove.integration.test.tsx`
 
 ### Implementation for User Story 2
 
-- [ ] T024 [P] [US2] Implement segmented favorites tab bar for teams/players/leagues in `src/features/favorites/components/FavoritesSegmentTabs.tsx`
-- [ ] T025 [P] [US2] Implement draggable favorites list item and reorder handlers in `src/features/favorites/components/FavoritesReorderListItem.tsx`
-- [ ] T026 [US2] Implement favorites screen orchestration with per-segment ordering in `src/features/favorites/screens/FavoritesScreen.tsx`
-- [ ] T027 [US2] Implement remove action and order re-normalization behavior in `src/features/favorites/services/favoritesMutations.ts`
-- [ ] T028 [US2] Implement segment-specific empty-state messaging in `src/features/favorites/components/FavoritesEmptyState.tsx`
+- [X] T024 [P] [US2] Implement segmented favorites tab bar for teams/players/leagues in `src/features/favorites/components/FavoritesSegmentTabs.tsx`
+- [X] T025 [P] [US2] Implement draggable favorites list item and reorder handlers in `src/features/favorites/components/FavoritesReorderListItem.tsx`
+- [X] T026 [US2] Implement favorites screen orchestration with per-segment ordering in `src/features/favorites/screens/FavoritesScreen.tsx`
+- [X] T027 [US2] Implement remove action and order re-normalization behavior in `src/features/favorites/services/favoritesMutations.ts`
+- [X] T028 [US2] Implement segment-specific empty-state messaging in `src/features/favorites/components/FavoritesEmptyState.tsx`
 
 **Checkpoint**: User Stories 1 and 2 both work independently.
 

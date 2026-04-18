@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { FavoriteItem, FavoriteType } from "../../../models/phase2";
 import { normalizeFavoritesOrder } from "../../shared/phase2Validation";
+import { applyRemoveFavorite, applyReorderFavorites } from "../services/favoritesMutations";
 
 export type FavoritesByType = Record<FavoriteType, FavoriteItem[]>;
 
@@ -56,24 +57,17 @@ export const useFavoritesStore = create<FavoritesStoreState>(set => ({
     set(state => ({
       itemsByType: {
         ...state.itemsByType,
-        [type]: normalizeSegment(state.itemsByType[type].filter(item => item.id !== id)),
+        [type]: applyRemoveFavorite(state.itemsByType[type], id),
       },
     })),
 
   reorderFavorites: (type, orderedIds) =>
     set(state => {
       const current = state.itemsByType[type];
-      const byId = new Map(current.map(item => [item.id, item]));
-
-      const reordered = orderedIds
-        .map(id => byId.get(id))
-        .filter((item): item is FavoriteItem => Boolean(item));
-
-      const leftovers = current.filter(item => !orderedIds.includes(item.id));
       return {
         itemsByType: {
           ...state.itemsByType,
-          [type]: normalizeSegment([...reordered, ...leftovers]),
+          [type]: applyReorderFavorites(current, orderedIds),
         },
       };
     }),
