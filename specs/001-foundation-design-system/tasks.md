@@ -44,6 +44,16 @@ description: "Implementation tasks for Phase 1 — Foundation & Design System"
 
 **Checkpoint**: Setup complete. All tooling enforces Constitution principles. TypeScript strict mode prevents compilation.
 
+- [X] T001 Initialize Expo project with TypeScript strict mode (`app.json`, `tsconfig.json`)
+- [X] T002 [P] Install core dependencies (react-native, expo-sdk, react-navigation, zustand, reanimated, flash-list, expo-image, zod, eslint, prettier, husky)
+- [X] T003 [P] Configure TypeScript strict mode in `tsconfig.json` (`strict: true`, `noImplicitAny: true`, `strictNullChecks: true`)
+- [X] T004 [P] Configure path aliases in `tsconfig.json` (`@components/*`, `@features/*`, `@navigation/*`, `@store/*`, `@hooks/*`, `@utils/*`, `@types/*`, `@api/*`)
+- [X] T005 [P] Configure ESLint (`.eslintrc.js`) with Airbnb rules + custom token-only color enforcement
+- [X] T006 [P] Configure Prettier (`.prettierrc`) for consistent formatting (2-space indents, trailing commas, semicolons)
+- [X] T007 [P] Configure Husky pre-commit hooks (`.husky/pre-commit`) to run ESLint + Prettier before commits
+- [X] T008 [P] Configure Jest (jest.config.js) + React Native Testing Library for test execution
+- [X] T009 Create folder structure: `src/theme/`, `src/components/`, `src/features/`, `src/navigation/`, `src/store/`, `src/hooks/`, `src/utils/`, `src/types/`, `src/api/`, `__tests__/`
+
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
@@ -52,13 +62,13 @@ description: "Implementation tasks for Phase 1 — Foundation & Design System"
 
 **⚠️ CRITICAL**: No user story work begins until this phase completes.
 
-- [ ] T010 [P] Define design tokens in `src/tokens.ts` (all color palettes: light + dark, spacing scale 4-48, typography scale, shadows, radii)
-- [ ] T011 [P] Create Theme types in `src/types/theme.ts` (Theme, DesignTokens, ColorPalette, SpacingScale, TypographyScale, ShadowScale, BorderRadiiScale)
-- [ ] T012 [P] Create Zustand theme store in `src/store/themeStore.ts` (mode, modeOverride, setMode, toggleMode, persistence hooks)
-- [ ] T013 [P] Create ThemeProvider Context in `src/theme/ThemeProvider.tsx` (wraps app, provides tokens to descendants)
-- [ ] T014 [P] Create `useTheme()` hook in `src/theme/useTheme.ts` (returns current tokens + actions, enforces Context usage)
-- [ ] T015 Create navigation types in `src/types/navigation.ts` (RootStackParamList, all stack param lists, route names enum)
-- [ ] T016 [P] Create React Navigation linking config in `src/navigation/linking.ts` (deep linking URIs, type-safe route mapping)
+- [X] T010 [P] Define design tokens in `src/tokens.ts` (all color palettes: light + dark, spacing scale 4-48, typography scale, shadows, radii)
+- [X] T011 [P] Create Theme types in `src/types/theme.ts` (Theme, DesignTokens, ColorPalette, SpacingScale, TypographyScale, ShadowScale, BorderRadiiScale)
+- [X] T012 [P] Create Zustand theme store in `src/store/themeStore.ts` (mode, modeOverride, setMode, toggleMode, persistence hooks)
+- [X] T013 [P] Create ThemeProvider Context in `src/theme/ThemeProvider.tsx` (wraps app, provides tokens to descendants)
+- [X] T014 [P] Create `useTheme()` hook in `src/theme/useTheme.ts` (returns current tokens + actions, enforces Context usage)
+- [X] T015 Create navigation types in `src/types/navigation.ts` (RootStackParamList, all stack param lists, route names enum)
+- [X] T016 [P] Create React Navigation linking config in `src/navigation/linking.ts` (deep linking URIs, type-safe route mapping)
 - [ ] T017 Unit test: Design tokens validation in `src/tokens.test.ts` (verify all colors exist, spacing is multiple of 4, contrast ≥ 4.5:1)
 - [ ] T018 Unit test: Zustand theme store in `src/store/themeStore.test.ts` (setMode, toggleMode, store subscriptions)
 - [ ] T019 Unit test: `useTheme()` hook in `src/theme/useTheme.test.ts` (hook returns correct tokens, updates on theme change)
