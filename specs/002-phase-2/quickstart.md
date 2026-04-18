@@ -1,6 +1,6 @@
-# Quickstart: Phase 2 Validation Guide
+# Quickstart: Phase 2 Implementation & Validation Guide
 
-**Purpose**: Validate Phase 2 interaction behavior using the generated plan artifacts before implementation tasks begin.
+**Purpose**: Validate implemented Phase 2 interaction behavior against FR-001..FR-013 and stage-level constraints.
 
 ---
 
@@ -8,6 +8,7 @@
 
 - Read `spec.md`, `plan.md`, `research.md`, `data-model.md`, and `contracts/ui-interaction-contracts.md`.
 - Ensure acceptance scenarios and FR-001..FR-013 are understood by implementers and reviewers.
+- Install dependencies: `npm install`.
 
 ---
 
@@ -39,10 +40,10 @@
 
 ---
 
-## 3. Test Planning Baseline (Stages 6–10)
+## 3. Test Coverage Baseline (Stages 6–10)
 
-- Prepare snapshot coverage for the five primary Phase 2 surfaces.
-- Prepare integration coverage for:
+- Snapshot coverage exists for the five primary Phase 2 surfaces.
+- Integration coverage exists for:
   - category/filter/tab switching
   - reorder + remove actions
   - section navigation with stable context
@@ -51,19 +52,33 @@
 
 ---
 
-## 4. Constitution Compliance Checklist
+## 4. Implementation Notes & Constraints Alignment
 
 - Type safety preserved across all new models and interaction flows.
 - FlashList/Reanimated constraints respected in implementation tasks.
 - Accessibility behavior included in acceptance and test cases.
 - State ownership remains clear (favorites/search recency/match details slices).
+- News details uses:
+  - sanitized rich-content mapping with unsupported-media fallback
+  - native share adapter via `shareArticle`
+  - related-story navigation via `openRelatedArticle`
 
 ---
 
-## 5. Ready-for-Tasks Exit Criteria
+## 5. Validation Commands (Runbook)
 
-- [ ] No unresolved clarification markers remain in planning artifacts.
-- [ ] Every functional requirement maps to at least one model/contract element.
-- [ ] Every user story has independent validation criteria.
-- [ ] Team agrees on fallback behavior for partial/missing content states.
-- [ ] `/speckit.tasks` can proceed using this artifact set.
+Run from repository root:
+
+- `npm run lint`
+- `npm run type-check`
+- `npm test`
+
+Expected outcome: all commands pass with zero errors.
+
+## 6. Phase 2 Exit Criteria Status
+
+- [X] No unresolved clarification markers remain in planning artifacts.
+- [X] Every functional requirement maps to at least one model/contract element.
+- [X] Every user story has independent validation criteria.
+- [X] Team agrees on fallback behavior for partial/missing content states.
+- [X] Full repository validation pass completed (`lint`, `type-check`, `test` all passing).

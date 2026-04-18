@@ -59,11 +59,43 @@ export const mockMatchDetail: MatchDetail = {
   h2h: { entries: [] },
 };
 
-export const mockNewsArticle: NewsArticle = {
-  id: "article-1",
-  title: "Matchday Preview",
-  publishedAt: "2026-04-18T00:00:00.000Z",
-  contentBlocks: [{ id: "block-1", type: "paragraph", content: "Preview content." }],
-  shareUrl: "https://example.com/article-1",
-  relatedArticleIds: [],
-};
+export const mockNewsArticles: NewsArticle[] = [
+  {
+    id: "article-1",
+    title: "Matchday Preview",
+    author: "Alex Harper",
+    publishedAt: "2026-04-18T00:00:00.000Z",
+    contentBlocks: [
+      { id: "block-1", type: "heading", content: "Arsenal vs Liverpool" },
+      {
+        id: "block-2",
+        type: "paragraph",
+        content: "Team news and tactical preview before kickoff.",
+      },
+      {
+        id: "block-3",
+        type: "embed",
+        content: "<iframe src='https://video.example.com/highlights'></iframe>",
+      },
+    ],
+    shareUrl: "https://example.com/article-1",
+    relatedArticleIds: ["article-2"],
+  },
+  {
+    id: "article-2",
+    title: "Injury Update Ahead of Weekend Fixture",
+    author: "Maya Collins",
+    publishedAt: "2026-04-17T00:00:00.000Z",
+    contentBlocks: [
+      {
+        id: "block-4",
+        type: "paragraph",
+        content: "Latest updates from the medical team.",
+      },
+    ],
+    shareUrl: "https://example.com/article-2",
+    relatedArticleIds: ["article-1"],
+  },
+];
+
+export const mockNewsArticle: NewsArticle = mockNewsArticles[0]!;

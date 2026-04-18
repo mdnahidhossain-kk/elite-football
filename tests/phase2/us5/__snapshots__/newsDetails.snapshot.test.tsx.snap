@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`News details snapshot matches rich article details state 1`] = `
+{
+  "articleId": "article-1",
+  "author": "Alex Harper",
+  "blocks": [
+    {
+      "id": "block-1",
+      "type": "heading",
+    },
+    {
+      "id": "block-2",
+      "type": "paragraph",
+    },
+    {
+      "id": "block-3",
+      "type": "embed",
+    },
+  ],
+  "canShare": true,
+  "publishedAt": "2026-04-18T00:00:00.000Z",
+  "relatedArticleIds": [
+    "article-2",
+  ],
+  "surfaceState": "article",
+  "title": "Matchday Preview",
+  "unsupportedBlockCount": 1,
+}
+`;

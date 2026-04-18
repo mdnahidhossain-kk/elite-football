@@ -146,16 +146,16 @@
 
 ### Tests for User Story 5
 
-- [ ] T044 [P] [US5] Add news details snapshot test coverage in `tests/phase2/us5/newsDetails.snapshot.test.tsx`
-- [ ] T045 [P] [US5] Add integration test for share action and related-story navigation in `tests/phase2/us5/newsShareRelated.integration.test.tsx`
-- [ ] T046 [P] [US5] Add integration test for unsupported media fallback rendering in `tests/phase2/us5/newsUnsupportedMedia.integration.test.tsx`
+- [X] T044 [P] [US5] Add news details snapshot test coverage in `tests/phase2/us5/newsDetails.snapshot.test.tsx`
+- [X] T045 [P] [US5] Add integration test for share action and related-story navigation in `tests/phase2/us5/newsShareRelated.integration.test.tsx`
+- [X] T046 [P] [US5] Add integration test for unsupported media fallback rendering in `tests/phase2/us5/newsUnsupportedMedia.integration.test.tsx`
 
 ### Implementation for User Story 5
 
-- [ ] T047 [P] [US5] Implement sanitized rich-content renderer wrapper in `src/features/news/components/NewsRichContentRenderer.tsx`
-- [ ] T048 [P] [US5] Implement related-articles list component in `src/features/news/components/RelatedArticlesList.tsx`
-- [ ] T049 [US5] Implement native share service for article URLs in `src/features/news/services/shareArticle.ts`
-- [ ] T050 [US5] Implement news details screen orchestration with media fallback behavior in `src/features/news/screens/NewsDetailsScreen.tsx`
+- [X] T047 [P] [US5] Implement sanitized rich-content renderer wrapper in `src/features/news/components/NewsRichContentRenderer.tsx`
+- [X] T048 [P] [US5] Implement related-articles list component in `src/features/news/components/RelatedArticlesList.tsx`
+- [X] T049 [US5] Implement native share service for article URLs in `src/features/news/services/shareArticle.ts`
+- [X] T050 [US5] Implement news details screen orchestration with media fallback behavior in `src/features/news/screens/NewsDetailsScreen.tsx`
 
 **Checkpoint**: All user stories are independently functional.
 
@@ -165,10 +165,10 @@
 
 **Purpose**: Final hardening across all stories.
 
-- [ ] T051 [P] Add cross-feature accessibility assertions for labels/focus/tap targets in `tests/phase2/polish/accessibility.integration.test.tsx`
-- [ ] T052 [P] Add performance-focused interaction test coverage for large lists and tab transitions in `tests/phase2/polish/performance.integration.test.tsx`
-- [ ] T053 Align Phase 2 implementation notes and constraints in `specs/002-phase-2/quickstart.md`
-- [ ] T054 Run full Phase 2 validation pass against quickstart exit criteria in `specs/002-phase-2/quickstart.md`
+- [X] T051 [P] Add cross-feature accessibility assertions for labels/focus/tap targets in `tests/phase2/polish/accessibility.integration.test.tsx`
+- [X] T052 [P] Add performance-focused interaction test coverage for large lists and tab transitions in `tests/phase2/polish/performance.integration.test.tsx`
+- [X] T053 Align Phase 2 implementation notes and constraints in `specs/002-phase-2/quickstart.md`
+- [X] T054 Run full Phase 2 validation pass against quickstart exit criteria in `specs/002-phase-2/quickstart.md`
 
 ---
 

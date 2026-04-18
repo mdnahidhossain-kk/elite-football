@@ -1,4 +1,4 @@
-import { AccessibilityInfo, findNodeHandle, StyleProp, ViewStyle } from "react-native";
+import type { StyleProp, ViewStyle } from "react-native";
 
 export const MIN_TAP_TARGET_SIZE = 44;
 
@@ -28,9 +28,22 @@ export const getAccessibleActionProps = (config: AccessibleActionConfig) => ({
   accessibilityState: { disabled: Boolean(config.disabled) },
 });
 
-export const focusNodeForAccessibility = (node: Parameters<typeof findNodeHandle>[0]): void => {
-  const reactTag = findNodeHandle(node);
+type ReactNativeA11yRuntime = {
+  AccessibilityInfo?: {
+    setAccessibilityFocus?: (reactTag: number) => void;
+  };
+  findNodeHandle?: (node: unknown) => number | null;
+};
+
+export const focusNodeForAccessibility = (
+  node: unknown,
+  runtime?: ReactNativeA11yRuntime | null
+): void => {
+  if (!runtime?.findNodeHandle || !runtime.AccessibilityInfo?.setAccessibilityFocus) {
+    return;
+  }
+  const reactTag = runtime.findNodeHandle(node);
   if (reactTag) {
-    AccessibilityInfo.setAccessibilityFocus(reactTag);
+    runtime.AccessibilityInfo.setAccessibilityFocus(reactTag);
   }
 };
