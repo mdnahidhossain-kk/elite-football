@@ -17,10 +17,10 @@
 
 **Purpose**: Initialize Phase 2 mobile implementation scaffolding and shared tooling.
 
-- [ ] T001 Create Phase 2 feature folder structure for leagues, favorites, search, match-center, and news in `/home/runner/work/elite-football/elite-football/src/features/`
-- [ ] T002 Create shared typed models and route definitions scaffold in `/home/runner/work/elite-football/elite-football/src/models/phase2/` and `/home/runner/work/elite-football/elite-football/src/navigation/phase2Routes.ts`
-- [ ] T003 [P] Configure test setup for Jest + React Native Testing Library in `/home/runner/work/elite-football/elite-football/tests/setup/jest.setup.ts`
-- [ ] T004 [P] Add Phase 2 mock data entry points in `/home/runner/work/elite-football/elite-football/src/mocks/phase2/`
+- [ ] T001 Create Phase 2 feature folder structure for leagues, favorites, search, match-center, and news in `src/features/`
+- [ ] T002 Create shared typed models and route definitions scaffold in `src/models/phase2/` and `src/navigation/phase2Routes.ts`
+- [ ] T003 [P] Configure test setup for Jest + React Native Testing Library in `tests/setup/jest.setup.ts`
+- [ ] T004 [P] Add Phase 2 mock data entry points in `src/mocks/phase2/`
 
 ---
 
@@ -30,13 +30,13 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete.
 
-- [ ] T005 Implement `Competition`, `FavoriteItem`, `SearchQuery`, `SearchResultItem`, `MatchDetail`, and `NewsArticle` TypeScript contracts in `/home/runner/work/elite-football/elite-football/src/models/phase2/entities.ts`
-- [ ] T006 [P] Implement validation/normalization helpers for category keys, letter keys, recents dedupe, and favorites ordering in `/home/runner/work/elite-football/elite-football/src/features/shared/phase2Validation.ts`
-- [ ] T007 Implement Zustand favorites store with per-type ordering and removal flows in `/home/runner/work/elite-football/elite-football/src/features/favorites/store/favoritesStore.ts`
-- [ ] T008 Implement search recents persistence service (MMKV preferred, AsyncStorage fallback) in `/home/runner/work/elite-football/elite-football/src/features/search/services/searchRecentsStorage.ts`
-- [ ] T009 [P] Implement shared no-data/empty/error UI states for Phase 2 surfaces in `/home/runner/work/elite-football/elite-football/src/features/shared/components/ContentFallbackState.tsx`
-- [ ] T010 [P] Implement accessibility utilities for labels, focus, and tappable target sizing in `/home/runner/work/elite-football/elite-football/src/features/shared/accessibility/phase2A11y.ts`
-- [ ] T011 [P] Add foundational tests for model validation, favorites ordering, and recents dedupe in `/home/runner/work/elite-football/elite-football/tests/phase2/foundational/phase2Foundations.test.ts`
+- [ ] T005 Implement `Competition`, `FavoriteItem`, `SearchQuery`, `SearchResultItem`, `MatchDetail`, and `NewsArticle` TypeScript contracts in `src/models/phase2/entities.ts`
+- [ ] T006 [P] Implement validation/normalization helpers for category keys, letter keys, recents dedupe, and favorites ordering in `src/features/shared/phase2Validation.ts`
+- [ ] T007 Implement Zustand favorites store with per-type ordering and removal flows in `src/features/favorites/store/favoritesStore.ts`
+- [ ] T008 Implement search recents persistence service (MMKV preferred, AsyncStorage fallback) in `src/features/search/services/searchRecentsStorage.ts`
+- [ ] T009 [P] Implement shared no-data/empty/error UI states for Phase 2 surfaces in `src/features/shared/components/ContentFallbackState.tsx`
+- [ ] T010 [P] Implement accessibility utilities for labels, focus, and tappable target sizing in `src/features/shared/accessibility/phase2A11y.ts`
+- [ ] T011 [P] Add foundational tests for model validation, favorites ordering, and recents dedupe in `tests/phase2/foundational/phase2Foundations.test.ts`
 
 **Checkpoint**: Foundation ready — user story implementation can now begin in priority order or in parallel.
 
@@ -50,18 +50,18 @@
 
 ### Tests for User Story 1
 
-- [ ] T012 [P] [US1] Add leagues screen snapshot test coverage in `/home/runner/work/elite-football/elite-football/tests/phase2/us1/leaguesScreen.snapshot.test.tsx`
-- [ ] T013 [P] [US1] Add integration test for category switching and list isolation in `/home/runner/work/elite-football/elite-football/tests/phase2/us1/leaguesCategorySwitch.integration.test.tsx`
-- [ ] T014 [P] [US1] Add integration test for alphabet quick-jump and fallback behavior in `/home/runner/work/elite-football/elite-football/tests/phase2/us1/leaguesQuickJump.integration.test.tsx`
+- [ ] T012 [P] [US1] Add leagues screen snapshot test coverage in `tests/phase2/us1/leaguesScreen.snapshot.test.tsx`
+- [ ] T013 [P] [US1] Add integration test for category switching and list isolation in `tests/phase2/us1/leaguesCategorySwitch.integration.test.tsx`
+- [ ] T014 [P] [US1] Add integration test for alphabet quick-jump and fallback behavior in `tests/phase2/us1/leaguesQuickJump.integration.test.tsx`
 
 ### Implementation for User Story 1
 
-- [ ] T015 [P] [US1] Implement competition grouping and letter index lookup utilities in `/home/runner/work/elite-football/elite-football/src/features/leagues/utils/competitionIndex.ts`
-- [ ] T016 [P] [US1] Implement category tabs component for leagues in `/home/runner/work/elite-football/elite-football/src/features/leagues/components/CompetitionCategoryTabs.tsx`
-- [ ] T017 [P] [US1] Implement alphabetical quick-jump rail component in `/home/runner/work/elite-football/elite-football/src/features/leagues/components/AlphabetQuickJump.tsx`
-- [ ] T018 [US1] Implement competitions FlashList screen with category and quick-jump orchestration in `/home/runner/work/elite-football/elite-football/src/features/leagues/screens/LeaguesScreen.tsx`
-- [ ] T019 [US1] Implement competition card item and empty-category fallback state in `/home/runner/work/elite-football/elite-football/src/features/leagues/components/CompetitionListItem.tsx`
-- [ ] T020 [US1] Wire competition selection to detail navigation contract in `/home/runner/work/elite-football/elite-football/src/features/leagues/navigation/openCompetitionDetail.ts`
+- [ ] T015 [P] [US1] Implement competition grouping and letter index lookup utilities in `src/features/leagues/utils/competitionIndex.ts`
+- [ ] T016 [P] [US1] Implement category tabs component for leagues in `src/features/leagues/components/CompetitionCategoryTabs.tsx`
+- [ ] T017 [P] [US1] Implement alphabetical quick-jump rail component in `src/features/leagues/components/AlphabetQuickJump.tsx`
+- [ ] T018 [US1] Implement competitions FlashList screen with category and quick-jump orchestration in `src/features/leagues/screens/LeaguesScreen.tsx`
+- [ ] T019 [US1] Implement competition card item and empty-category fallback state in `src/features/leagues/components/CompetitionListItem.tsx`
+- [ ] T020 [US1] Wire competition selection to detail navigation contract in `src/features/leagues/navigation/openCompetitionDetail.ts`
 
 **Checkpoint**: User Story 1 is independently functional and testable.
 
@@ -75,17 +75,17 @@
 
 ### Tests for User Story 2
 
-- [ ] T021 [P] [US2] Add favorites screen snapshot test coverage in `/home/runner/work/elite-football/elite-football/tests/phase2/us2/favoritesScreen.snapshot.test.tsx`
-- [ ] T022 [P] [US2] Add integration test for segment tab isolation in `/home/runner/work/elite-football/elite-football/tests/phase2/us2/favoritesSegments.integration.test.tsx`
-- [ ] T023 [P] [US2] Add integration test for reorder persistence and remove behavior in `/home/runner/work/elite-football/elite-football/tests/phase2/us2/favoritesReorderRemove.integration.test.tsx`
+- [ ] T021 [P] [US2] Add favorites screen snapshot test coverage in `tests/phase2/us2/favoritesScreen.snapshot.test.tsx`
+- [ ] T022 [P] [US2] Add integration test for segment tab isolation in `tests/phase2/us2/favoritesSegments.integration.test.tsx`
+- [ ] T023 [P] [US2] Add integration test for reorder persistence and remove behavior in `tests/phase2/us2/favoritesReorderRemove.integration.test.tsx`
 
 ### Implementation for User Story 2
 
-- [ ] T024 [P] [US2] Implement segmented favorites tab bar for teams/players/leagues in `/home/runner/work/elite-football/elite-football/src/features/favorites/components/FavoritesSegmentTabs.tsx`
-- [ ] T025 [P] [US2] Implement draggable favorites list item and reorder handlers in `/home/runner/work/elite-football/elite-football/src/features/favorites/components/FavoritesReorderListItem.tsx`
-- [ ] T026 [US2] Implement favorites screen orchestration with per-segment ordering in `/home/runner/work/elite-football/elite-football/src/features/favorites/screens/FavoritesScreen.tsx`
-- [ ] T027 [US2] Implement remove action and order re-normalization behavior in `/home/runner/work/elite-football/elite-football/src/features/favorites/services/favoritesMutations.ts`
-- [ ] T028 [US2] Implement segment-specific empty-state messaging in `/home/runner/work/elite-football/elite-football/src/features/favorites/components/FavoritesEmptyState.tsx`
+- [ ] T024 [P] [US2] Implement segmented favorites tab bar for teams/players/leagues in `src/features/favorites/components/FavoritesSegmentTabs.tsx`
+- [ ] T025 [P] [US2] Implement draggable favorites list item and reorder handlers in `src/features/favorites/components/FavoritesReorderListItem.tsx`
+- [ ] T026 [US2] Implement favorites screen orchestration with per-segment ordering in `src/features/favorites/screens/FavoritesScreen.tsx`
+- [ ] T027 [US2] Implement remove action and order re-normalization behavior in `src/features/favorites/services/favoritesMutations.ts`
+- [ ] T028 [US2] Implement segment-specific empty-state messaging in `src/features/favorites/components/FavoritesEmptyState.tsx`
 
 **Checkpoint**: User Stories 1 and 2 both work independently.
 
@@ -99,17 +99,17 @@
 
 ### Tests for User Story 3
 
-- [ ] T029 [P] [US3] Add search screen snapshot test coverage in `/home/runner/work/elite-football/elite-football/tests/phase2/us3/searchScreen.snapshot.test.tsx`
-- [ ] T030 [P] [US3] Add integration test for debounced query updates and filter-scoped results in `/home/runner/work/elite-football/elite-football/tests/phase2/us3/searchQueryFilter.integration.test.tsx`
-- [ ] T031 [P] [US3] Add integration test for recent-search recall and no-results fallback in `/home/runner/work/elite-football/elite-football/tests/phase2/us3/searchRecents.integration.test.tsx`
+- [ ] T029 [P] [US3] Add search screen snapshot test coverage in `tests/phase2/us3/searchScreen.snapshot.test.tsx`
+- [ ] T030 [P] [US3] Add integration test for debounced query updates and filter-scoped results in `tests/phase2/us3/searchQueryFilter.integration.test.tsx`
+- [ ] T031 [P] [US3] Add integration test for recent-search recall and no-results fallback in `tests/phase2/us3/searchRecents.integration.test.tsx`
 
 ### Implementation for User Story 3
 
-- [ ] T032 [P] [US3] Implement search filter chips/tabs UI in `/home/runner/work/elite-football/elite-football/src/features/search/components/SearchFilterBar.tsx`
-- [ ] T033 [P] [US3] Implement debounced search execution and projection logic in `/home/runner/work/elite-football/elite-football/src/features/search/services/searchEngine.ts`
-- [ ] T034 [P] [US3] Implement recent-search list and selection component in `/home/runner/work/elite-football/elite-football/src/features/search/components/RecentSearchesList.tsx`
-- [ ] T035 [US3] Implement global search screen orchestration and state transitions in `/home/runner/work/elite-football/elite-football/src/features/search/screens/SearchScreen.tsx`
-- [ ] T036 [US3] Implement search result routing helper for club/player/league/news destinations in `/home/runner/work/elite-football/elite-football/src/features/search/navigation/openSearchResult.ts`
+- [ ] T032 [P] [US3] Implement search filter chips/tabs UI in `src/features/search/components/SearchFilterBar.tsx`
+- [ ] T033 [P] [US3] Implement debounced search execution and projection logic in `src/features/search/services/searchEngine.ts`
+- [ ] T034 [P] [US3] Implement recent-search list and selection component in `src/features/search/components/RecentSearchesList.tsx`
+- [ ] T035 [US3] Implement global search screen orchestration and state transitions in `src/features/search/screens/SearchScreen.tsx`
+- [ ] T036 [US3] Implement search result routing helper for club/player/league/news destinations in `src/features/search/navigation/openSearchResult.ts`
 
 **Checkpoint**: User Stories 1–3 are independently functional.
 
@@ -123,16 +123,16 @@
 
 ### Tests for User Story 4
 
-- [ ] T037 [P] [US4] Add match center snapshot test coverage in `/home/runner/work/elite-football/elite-football/tests/phase2/us4/matchCenter.snapshot.test.tsx`
-- [ ] T038 [P] [US4] Add integration test for section switching with stable fixture context in `/home/runner/work/elite-football/elite-football/tests/phase2/us4/matchSections.integration.test.tsx`
-- [ ] T039 [P] [US4] Add integration test for unavailable section fallback states in `/home/runner/work/elite-football/elite-football/tests/phase2/us4/matchUnavailableSection.integration.test.tsx`
+- [ ] T037 [P] [US4] Add match center snapshot test coverage in `tests/phase2/us4/matchCenter.snapshot.test.tsx`
+- [ ] T038 [P] [US4] Add integration test for section switching with stable fixture context in `tests/phase2/us4/matchSections.integration.test.tsx`
+- [ ] T039 [P] [US4] Add integration test for unavailable section fallback states in `tests/phase2/us4/matchUnavailableSection.integration.test.tsx`
 
 ### Implementation for User Story 4
 
-- [ ] T040 [P] [US4] Implement match-center section tab control in `/home/runner/work/elite-football/elite-football/src/features/match-center/components/MatchCenterSectionTabs.tsx`
-- [ ] T041 [P] [US4] Implement section renderers for info/lineups/stats/h2h in `/home/runner/work/elite-football/elite-football/src/features/match-center/components/sections/`
-- [ ] T042 [US4] Implement match detail state slice maintaining stable fixture identity in `/home/runner/work/elite-football/elite-football/src/features/match-center/store/matchDetailStore.ts`
-- [ ] T043 [US4] Implement match center screen with header context + section fallbacks in `/home/runner/work/elite-football/elite-football/src/features/match-center/screens/MatchCenterScreen.tsx`
+- [ ] T040 [P] [US4] Implement match-center section tab control in `src/features/match-center/components/MatchCenterSectionTabs.tsx`
+- [ ] T041 [P] [US4] Implement section renderers for info/lineups/stats/h2h in `src/features/match-center/components/sections/`
+- [ ] T042 [US4] Implement match detail state slice maintaining stable fixture identity in `src/features/match-center/store/matchDetailStore.ts`
+- [ ] T043 [US4] Implement match center screen with header context + section fallbacks in `src/features/match-center/screens/MatchCenterScreen.tsx`
 
 **Checkpoint**: User Stories 1–4 are independently functional.
 
@@ -146,16 +146,16 @@
 
 ### Tests for User Story 5
 
-- [ ] T044 [P] [US5] Add news details snapshot test coverage in `/home/runner/work/elite-football/elite-football/tests/phase2/us5/newsDetails.snapshot.test.tsx`
-- [ ] T045 [P] [US5] Add integration test for share action and related-story navigation in `/home/runner/work/elite-football/elite-football/tests/phase2/us5/newsShareRelated.integration.test.tsx`
-- [ ] T046 [P] [US5] Add integration test for unsupported media fallback rendering in `/home/runner/work/elite-football/elite-football/tests/phase2/us5/newsUnsupportedMedia.integration.test.tsx`
+- [ ] T044 [P] [US5] Add news details snapshot test coverage in `tests/phase2/us5/newsDetails.snapshot.test.tsx`
+- [ ] T045 [P] [US5] Add integration test for share action and related-story navigation in `tests/phase2/us5/newsShareRelated.integration.test.tsx`
+- [ ] T046 [P] [US5] Add integration test for unsupported media fallback rendering in `tests/phase2/us5/newsUnsupportedMedia.integration.test.tsx`
 
 ### Implementation for User Story 5
 
-- [ ] T047 [P] [US5] Implement sanitized rich-content renderer wrapper in `/home/runner/work/elite-football/elite-football/src/features/news/components/NewsRichContentRenderer.tsx`
-- [ ] T048 [P] [US5] Implement related-articles list component in `/home/runner/work/elite-football/elite-football/src/features/news/components/RelatedArticlesList.tsx`
-- [ ] T049 [US5] Implement native share service for article URLs in `/home/runner/work/elite-football/elite-football/src/features/news/services/shareArticle.ts`
-- [ ] T050 [US5] Implement news details screen orchestration with media fallback behavior in `/home/runner/work/elite-football/elite-football/src/features/news/screens/NewsDetailsScreen.tsx`
+- [ ] T047 [P] [US5] Implement sanitized rich-content renderer wrapper in `src/features/news/components/NewsRichContentRenderer.tsx`
+- [ ] T048 [P] [US5] Implement related-articles list component in `src/features/news/components/RelatedArticlesList.tsx`
+- [ ] T049 [US5] Implement native share service for article URLs in `src/features/news/services/shareArticle.ts`
+- [ ] T050 [US5] Implement news details screen orchestration with media fallback behavior in `src/features/news/screens/NewsDetailsScreen.tsx`
 
 **Checkpoint**: All user stories are independently functional.
 
@@ -165,10 +165,10 @@
 
 **Purpose**: Final hardening across all stories.
 
-- [ ] T051 [P] Add cross-feature accessibility assertions for labels/focus/tap targets in `/home/runner/work/elite-football/elite-football/tests/phase2/polish/accessibility.integration.test.tsx`
-- [ ] T052 [P] Add performance-focused interaction test coverage for large lists and tab transitions in `/home/runner/work/elite-football/elite-football/tests/phase2/polish/performance.integration.test.tsx`
-- [ ] T053 Align Phase 2 implementation notes and constraints in `/home/runner/work/elite-football/elite-football/specs/002-phase-2/quickstart.md`
-- [ ] T054 Run full Phase 2 validation pass against quickstart exit criteria in `/home/runner/work/elite-football/elite-football/specs/002-phase-2/quickstart.md`
+- [ ] T051 [P] Add cross-feature accessibility assertions for labels/focus/tap targets in `tests/phase2/polish/accessibility.integration.test.tsx`
+- [ ] T052 [P] Add performance-focused interaction test coverage for large lists and tab transitions in `tests/phase2/polish/performance.integration.test.tsx`
+- [ ] T053 Align Phase 2 implementation notes and constraints in `specs/002-phase-2/quickstart.md`
+- [ ] T054 Run full Phase 2 validation pass against quickstart exit criteria in `specs/002-phase-2/quickstart.md`
 
 ---
 
@@ -248,4 +248,4 @@ Task: "Implement recent-search list and selection component in src/features/sear
 
 - [P] tasks touch different files and avoid incomplete-task dependencies.
 - [US#] labels map each task to its story for independent delivery/testing.
-- All task descriptions include absolute file paths for immediate execution.
+- All task descriptions include repository-relative file paths for immediate execution.
