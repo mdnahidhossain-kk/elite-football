@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`MatchCenter snapshot matches active section state with fixture context 1`] = `
+{
+  "activeSection": "stats",
+  "availableSections": [
+    "info",
+    "lineups",
+    "stats",
+    "h2h",
+  ],
+  "header": "Arsenal vs Liverpool",
+  "matchId": "fixture-42",
+  "status": "live",
+  "surfaceState": "section",
+}
+`;

@@ -123,16 +123,16 @@
 
 ### Tests for User Story 4
 
-- [ ] T037 [P] [US4] Add match center snapshot test coverage in `tests/phase2/us4/matchCenter.snapshot.test.tsx`
-- [ ] T038 [P] [US4] Add integration test for section switching with stable fixture context in `tests/phase2/us4/matchSections.integration.test.tsx`
-- [ ] T039 [P] [US4] Add integration test for unavailable section fallback states in `tests/phase2/us4/matchUnavailableSection.integration.test.tsx`
+- [X] T037 [P] [US4] Add match center snapshot test coverage in `tests/phase2/us4/matchCenter.snapshot.test.tsx`
+- [X] T038 [P] [US4] Add integration test for section switching with stable fixture context in `tests/phase2/us4/matchSections.integration.test.tsx`
+- [X] T039 [P] [US4] Add integration test for unavailable section fallback states in `tests/phase2/us4/matchUnavailableSection.integration.test.tsx`
 
 ### Implementation for User Story 4
 
-- [ ] T040 [P] [US4] Implement match-center section tab control in `src/features/match-center/components/MatchCenterSectionTabs.tsx`
-- [ ] T041 [P] [US4] Implement section renderers for info/lineups/stats/h2h in `src/features/match-center/components/sections/`
-- [ ] T042 [US4] Implement match detail state slice maintaining stable fixture identity in `src/features/match-center/store/matchDetailStore.ts`
-- [ ] T043 [US4] Implement match center screen with header context + section fallbacks in `src/features/match-center/screens/MatchCenterScreen.tsx`
+- [X] T040 [P] [US4] Implement match-center section tab control in `src/features/match-center/components/MatchCenterSectionTabs.tsx`
+- [X] T041 [P] [US4] Implement section renderers for info/lineups/stats/h2h in `src/features/match-center/components/sections/`
+- [X] T042 [US4] Implement match detail state slice maintaining stable fixture identity in `src/features/match-center/store/matchDetailStore.ts`
+- [X] T043 [US4] Implement match center screen with header context + section fallbacks in `src/features/match-center/screens/MatchCenterScreen.tsx`
 
 **Checkpoint**: User Stories 1–4 are independently functional.
 
