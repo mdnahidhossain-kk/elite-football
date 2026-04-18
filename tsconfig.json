@@ -31,6 +31,6 @@
       "@theme": ["src/theme/ThemeProvider.tsx"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "build", "dist", ".expo"]
+  "include": ["App.tsx", "index.ts", "src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts", "tests/**/*.tsx"],
+  "exclude": ["node_modules", "build", "dist", ".expo", "specs"]
 }

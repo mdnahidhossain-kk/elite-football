@@ -5,6 +5,7 @@ dist/
 build/
 dist/
 coverage/
+*.min.js
 .metro-health-check*
 *.tsbuildinfo
 tsconfig.tsbuildinfo

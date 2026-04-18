@@ -17,10 +17,10 @@
 
 **Purpose**: Initialize Phase 2 mobile implementation scaffolding and shared tooling.
 
-- [ ] T001 Create Phase 2 feature folder structure for leagues, favorites, search, match-center, and news in `src/features/`
-- [ ] T002 Create shared typed models and route definitions scaffold in `src/models/phase2/` and `src/navigation/phase2Routes.ts`
-- [ ] T003 [P] Configure test setup for Jest + React Native Testing Library in `tests/setup/jest.setup.ts`
-- [ ] T004 [P] Add Phase 2 mock data entry points in `src/mocks/phase2/`
+- [X] T001 Create Phase 2 feature folder structure for leagues, favorites, search, match-center, and news in `src/features/`
+- [X] T002 Create shared typed models and route definitions scaffold in `src/models/phase2/` and `src/navigation/phase2Routes.ts`
+- [X] T003 [P] Configure test setup for Jest + React Native Testing Library in `tests/setup/jest.setup.ts`
+- [X] T004 [P] Add Phase 2 mock data entry points in `src/mocks/phase2/`
 
 ---
 
@@ -30,13 +30,13 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete.
 
-- [ ] T005 Implement `Competition`, `FavoriteItem`, `SearchQuery`, `SearchResultItem`, `MatchDetail`, and `NewsArticle` TypeScript contracts in `src/models/phase2/entities.ts`
-- [ ] T006 [P] Implement validation/normalization helpers for category keys, letter keys, recents dedupe, and favorites ordering in `src/features/shared/phase2Validation.ts`
-- [ ] T007 Implement Zustand favorites store with per-type ordering and removal flows in `src/features/favorites/store/favoritesStore.ts`
-- [ ] T008 Implement search recents persistence service (MMKV preferred, AsyncStorage fallback) in `src/features/search/services/searchRecentsStorage.ts`
-- [ ] T009 [P] Implement shared no-data/empty/error UI states for Phase 2 surfaces in `src/features/shared/components/ContentFallbackState.tsx`
-- [ ] T010 [P] Implement accessibility utilities for labels, focus, and tappable target sizing in `src/features/shared/accessibility/phase2A11y.ts`
-- [ ] T011 [P] Add foundational tests for model validation, favorites ordering, and recents dedupe in `tests/phase2/foundational/phase2Foundations.test.ts`
+- [X] T005 Implement `Competition`, `FavoriteItem`, `SearchQuery`, `SearchResultItem`, `MatchDetail`, and `NewsArticle` TypeScript contracts in `src/models/phase2/entities.ts`
+- [X] T006 [P] Implement validation/normalization helpers for category keys, letter keys, recents dedupe, and favorites ordering in `src/features/shared/phase2Validation.ts`
+- [X] T007 Implement Zustand favorites store with per-type ordering and removal flows in `src/features/favorites/store/favoritesStore.ts`
+- [X] T008 Implement search recents persistence service (MMKV preferred, AsyncStorage fallback) in `src/features/search/services/searchRecentsStorage.ts`
+- [X] T009 [P] Implement shared no-data/empty/error UI states for Phase 2 surfaces in `src/features/shared/components/ContentFallbackState.tsx`
+- [X] T010 [P] Implement accessibility utilities for labels, focus, and tappable target sizing in `src/features/shared/accessibility/phase2A11y.ts`
+- [X] T011 [P] Add foundational tests for model validation, favorites ordering, and recents dedupe in `tests/phase2/foundational/phase2Foundations.test.ts`
 
 **Checkpoint**: Foundation ready — user story implementation can now begin in priority order or in parallel.
 
