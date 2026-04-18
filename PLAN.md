@@ -3,7 +3,7 @@
 > **25 Stages · 5 Phases · React Native + Expo + TypeScript**
 > Best practices enforced at every stage.
 
------
+------
 
 ## Phase 1: Foundation & Design System
 
